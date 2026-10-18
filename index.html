@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Notes App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <header class="app-header">
+            <h1>📝 My Notes</h1>
+            <p>Write your thoughts, save your ideas.</p>
+        </header>
+
+        <section class="note-form">
+
+            <h2 id="formHeading">Create a New Note</h2>
+
+            <form id="noteForm">
+
+                <input
+                    type="text"
+                    id="noteTitle"
+                    placeholder="Enter note title"
+                    required
+                >
+
+                <textarea
+                    id="noteContent"
+                    placeholder="Write your note here..."
+                    rows="5"
+                    required
+                ></textarea>
+
+                <div class="form-buttons">
+
+                    <button type="submit" id="saveButton">
+                        + Add Note
+                    </button>
+
+                    <button
+                        type="button"
+                        id="cancelButton"
+                        class="cancel-btn"
+                        hidden
+                    >
+                        Cancel Edit
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+        <section class="notes-section">
+
+            <div class="notes-header">
+                <h2>My Notes</h2>
+
+                <span id="notesCount">0 Notes</span>
+            </div>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 Search your notes..."
+            >
+
+            <div id="notesContainer" class="notes-container"></div>
+
+            <p id="emptyMessage" class="empty-message">
+                No notes yet. Create your first note!
+            </p>
+
+        </section>
+
+        <footer>
+            <p>Made with ❤️ using HTML, CSS & JavaScript</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
